@@ -1,0 +1,313 @@
+body{
+    background: url(U6jGKGwQ-qvYFzDiKivImlx0Gp05VlzKJedByIf0CXUe68g99PPNMXsSzkE3rxrUIEFBSycI9QOcV4UuLMJXiuMZ.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 750px;
+}
+
+/*Описание*/
+
+.menu p{
+    color: white;
+    border-bottom: 2px solid rgb(0, 174, 255);
+    margin-left: 2%;
+    font-size: 140%;
+    max-width: 30%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.menu{
+    display: flex;
+    margin-top: 1%;
+    width: 100%;
+    height: 10%;
+}
+.menu1{
+    width: 50%;
+    position: absolute;
+    right: 0%;
+    margin-top: 1%;
+}
+
+.menu1 button {
+    float: right;
+}
+
+.menu button{
+    border: 0;
+    border-bottom: 2px solid rgb(0, 174, 255);
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 100%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu button:hover{
+    border: 2px solid rgb(0, 174, 255);
+    margin: 13px;
+}
+
+#opis1{
+    width: 45%;
+    margin-left: 3%;
+    color: white;
+}
+
+.kol{
+    font-family: Andale Mono, monospace; 
+    font-size: 200%;
+    color: rgba(255, 255, 255, 0.918);
+    background-color: rgba(0, 0, 0, 0.747);
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.testna{
+    font-size: 150%;
+    color: rgba(255, 255, 255, 0.918);
+    background-color: rgba(0, 0, 0, 0.705);
+    text-align: center;
+}
+
+#opis1 button{
+    border: 0;
+    background-color: white;
+    font-size: 100%;
+    padding: 3% 10%;
+    position: relative;
+    left: 20%;
+}
+
+#opis1 button:hover{
+    background-color: black;
+    color: white;
+}
+
+/*Тесты*/
+#block-test{
+    height: 100%;
+    display: flex;
+}
+
+.mode{
+    width: 19.5%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.555);
+    position: absolute;
+    left: 0%;
+    border-right: 6px solid rgb(0, 174, 255);
+}
+
+.mode button{
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 5% 31%;
+}
+
+.mode button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(0, 174, 255);
+}
+
+#vop{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    right: 0%;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
+#reset{
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.226);
+    padding: 2% 5%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+#reset:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/*Игры*/
+
+#block-zadach{
+    background-color: rgba(255, 255, 255, 0.767);
+    display: block;
+}
+
+#block-zadach button{
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.918);
+    width: 30%;
+    height: 100%;
+    margin: 1%;
+}
+
+#block-zadach button:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+@media screen and (max-width:582px){
+    .menu p{
+        color: white;
+        border-bottom: 2px solid rgb(0, 174, 255);
+        font-size: 140%;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: absolute;
+        left: 32.5%;
+    }
+    
+    .menu{
+        display: flex;
+        margin-top: 1%;
+        width: 100%;
+        height: 10%;
+    }
+    .menu1{
+        width: 100%;
+        position: absolute;
+        right: 0%;
+        margin-top: 17%;
+    }
+    
+    .menu1 button {
+        float: right;
+    }
+    
+    .menu button{
+        border: 0;
+        border-bottom: 2px solid rgb(0, 174, 255);
+        margin: 15px;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        font-size: 100%;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .menu button:hover{
+        border: 2px solid rgb(0, 174, 255);
+        margin: 13px;
+    }
+    
+    #opis1{
+        width: 96%;
+        margin-left: 3%;
+        color: white;
+    }
+    
+    .kol{
+        font-family: Andale Mono, monospace; 
+        font-size: 200%;
+        color: rgba(255, 255, 255, 0.918);
+        background-color: rgba(0, 0, 0, 0.747);
+        text-align: center;
+        margin-bottom: 0%;
+    }
+    
+    .testna{
+        font-size: 150%;
+        color: rgba(255, 255, 255, 0.918);
+        background-color: rgba(0, 0, 0, 0.705);
+        text-align: center;
+    }
+    
+    #opis1 button{
+        border: 0;
+        background-color: white;
+        font-size: 100%;
+        padding: 3% 10%;
+        position: relative;
+        left: auto;
+        margin-bottom: 3%;
+    }
+    
+    #opis1 button:hover{
+        background-color: black;
+        color: white;
+    } 
+
+    /*Тесты*/
+#block-test{
+    height: 100%;
+    display: flex;
+}
+
+.mode{
+    width: 19.5%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.555);
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    border-right: 6px solid rgb(0, 174, 255);
+}
+
+.mode button{
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 5% 1%;
+}
+
+.mode button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(0, 174, 255);
+}
+
+#vop{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
+#reset{
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.226);
+    padding: 2% 5%;
+    position: absolute;
+    right: 35%;
+    top: 80%;
+}
+
+#reset:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.otvet img{
+    width: 20%;
+}
+
+.otvet button{
+    display: block;
+}
+}
+
+@media screen and (max-width:930px) {
+    .otvet{
+        float: right;
+    }
+    .otvet button{
+        display: block;
+    }
+    .otvet img{
+        width: 50%;
+    }
+    #reset{
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.226);
+    padding: 2% 5%;
+    position: absolute;
+    right: 35%;
+    top: 80%;
+}
+}

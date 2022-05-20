@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IQ</title>
+</head>
+<body>
+
+    <div class="menu">
+        <p>IQ-TEST</p>
+        <div class="menu1">
+            <button id="st">Статистика</button>
+            <button id="ig">Игры</button>
+            <button id="te">Тесты</button>
+        </div>
+    </div>
+
+    <div id="opis1" style="display: block;">
+        <h1 style="text-align: center; font-size: 500%; margin-bottom: 0%;">IQ</h1>  
+        <p class="kol">КОЛИЧЕСТВЕННАЯ ОЦЕНКА УРОВНЯ ИНТЕЛЛЕКТА ЧЕЛОВЕКА</p>
+        <p class="testna">Тесты на уровень IQ помогает определить людей, которым нужны особые условия для обучения. Если результат ребёнка значительно выше 
+            среднего, то есть смысл обучать его по более сложной программе. Если результат низкий - нужно создать условия для усвоения минимально необходимых
+            знаний, чтобы позаботиться о человеке. 
+        </p>
+        <button id="te2">Пройдите тест прямо сейчас</button>
+    </div>
+
+    <div id="block-test" style="display: none;">
+        <div class="mode">
+            <button id="testBth">Быстрый IQ тест</button>
+        </div>
+
+            
+
+            <div id="vop" style="display: none;">
+                <h2 id="naz" style="display: none; text-align: center; font-size: 100%;">Выберите правильный вариант ответа</h2>
+                <button id="reset" style="display: none;">Рестарт</button>
+
+                <div id="vop1" style="display: none;">
+                    <img src="vop/vop1.png" width="40%">
+                        <span class="otvet">
+                            <button id="o1_1"><img src="vop/vop1_a.png" width="100%"></button>
+                            <button id="o1_2"><img src="vop/vop1_b.png" width="100%"></button>
+                            <button id="o1_3"><img src="vop/vop1_c.png" width="100%"></button>
+                        </span>
+                </div>
+
+                <div id="vop2" style="display: none;" >
+                    <img src="vop/2_0_0.png" width="40%">
+                        <span class="otvet">
+                            <button id="o2_1"><img src="vop/2_1_0.png" width="100%"></button>
+                            <button id="o2_2"><img src="vop/2_4_0.png" width="100%"></button>
+                            <button id="o2_3"><img src="vop/2_5_0.png" width="100%"></button>
+                        </span>
+                </div>
+
+                <div id="vop3" style="display: none;">
+                    <img src="vop/6_0_0.png" width="40%"> 
+                    <span class="otvet">
+                        <button id="o3_1"><img src="vop/6_2_0.png" width="100%"></button>
+                        <button id="o3_2"><img src="vop/6_4_0.png" width="100%"></button>
+                        <button id="o3_3"><img src="vop/6_5_0.png" width="100%"></button>
+                    </span>
+                </div>
+
+                <div id="vop4" style="display: none;">
+                    <img src="vop/7_0_0.png" width="40%">
+                    <span class="otvet">
+                        <button id="o4_1"><img src="vop/7_1_0.png" width="100%"></button>
+                        <button id="o4_2"><img src="vop/7_2_0.png" width="100%"></button>
+                        <button id="o4_3"><img src="vop/7_5_0.png" width="100%"></button>
+                    </span>
+                </div>
+
+                <div id="vop5" style="display: none;">
+                    <img src="vop/q1.jpg" width="30%" style="margin-top: -10px; margin-left: 5px;">
+                    <span class="otvet">
+                        <button id="o5_1"><img src="vop/a1_2.jpg" width="100%"></button>
+                        <button id="o5_2"><img src="vop/a1_3.jpg" width="100%"></button>
+                        <button id="o5_3"><img src="vop/a1_6.jpg" width="100%"></button>
+                    </span>
+                </div>
+
+                <div id="vop6" style="display: none;">
+                    <img src="vop/q8.jpg" width="30%" style="margin-top: -10px; margin-left: 5px;">
+                    <span class="otvet">
+                        <button id="o6_1"><img src="vop/a8_43.jpg" width="100%"></button>
+                        <button id="o6_2"><img src="vop/a8_44.jpg" width="100%"></button>
+                        <button id="o6_3"><img src="vop/a8_47.jpg" width="100%"></button>
+                    </span>
+                </div>
+
+                <div id="vop7" style="display: none;">
+                    <img src="vop/q28.jpg" width="30%" style="margin-top: -10px; margin-left: 5px;">
+                    <span class="otvet">
+                        <button id="o7_1"><img src="vop/a28_166.jpg" width="100%"></button>
+                        <button id="o7_2"><img src="vop/a28_167.jpg" width="100%"></button>
+                        <button id="o7_3"><img src="vop/a28_168.jpg" width="100%"></button>
+                    </span>
+                </div>
+
+                <div id="vop8" style="display: none;">
+                    <img src="vop/q14.jpg" width="30%" style="margin-top: -10px; margin-left: 5px;">
+                    <span class="otvet">
+                        <button id="o8_1"><img src="vop/a14_81.jpg" width="100%"></button>
+                        <button id="o8_2"><img src="vop/a14_82.jpg" width="100%"></button>
+                        <button id="o8_3"><img src="vop/a14_83.jpg" width="100%"></button>
+                    </span>
+                </div>
+
+                <div id="vop9" style="display: none;">
+                    <img src="vop/q11.jpg" width="30%" style="margin-top: -10px; margin-left: 5px;">
+                    <span class="otvet">
+                        <button id="o9_1"><img src="vop/a11_61.jpg" width="100%"></button>
+                        <button id="o9_2"><img src="vop/a11_64.jpg" width="100%"></button>
+                        <button id="o9_3"><img src="vop/a11_66.jpg" width="100%"></button>
+                    </span>
+                </div>
+
+                <div id="vop10" style="display: none;">
+                    <img src="vop/q10.jpg" width="30%" style="margin-top: -10px; margin-left: 5px;">
+                    <span class="otvet">
+                        <button id="o10_1"><img src="vop/a10_55.jpg" width="100%"></button>
+                        <button id="o10_2"><img src="vop/a10_57.jpg" width="100%"></button>
+                        <button id="o10_3"><img src="vop/a10_60.jpg" width="100%"></button>
+                    </span>
+                </div>
+
+                <div id="vop11" style="display: none;">
+                    <img src="vop/q17.jpg" width="30%" style="margin-top: -10px; margin-left: 5px;">
+                        <span class="otvet">
+                            <button id="o11_1"><img src="vop/a17_100.jpg" width="100%"></button>
+                            <button id="o11_2"><img src="vop/a17_97.jpg" width="100%"></button>
+                            <button id="o11_3"><img src="vop/a17_99.jpg" width="100%"></button>
+                        </span>
+                </div>
+
+                <div id="vop12" style="display: none;">
+                    <img src="vop/q12.jpg" width="30%" style="margin-top: -10px; margin-left: 5px;">
+                        <span class="otvet">
+                            <button id="o12_1"><img src="vop/a12_69.jpg" width="100%"></button>
+                            <button id="o12_2"><img src="vop/a12_70.jpg" width="100%"></button>
+                            <button id="o12_3"><img src="vop/a12_72.jpg" width="100%"></button>
+                        </span>
+                </div>
+
+                <div id="vop13" style="display: none;">
+                    <img src="vop/q20.jpg" width="30%" style="margin-top: -10px; margin-left: 5px;">
+                        <span class="otvet">
+                            <button id="o13_1"><img src="vop/a20_115.jpg" width="100%"></button>
+                            <button id="o13_2"><img src="vop/a20_119.jpg" width="100%"></button>
+                            <button id="o13_3"><img src="vop/a20_120.jpg" width="100%"></button>
+                        </span>
+                </div>
+
+                <div id="vop14" style="display: none;">
+                    <img src="vop/q26.jpg" width="30%" style="margin-top: -10px; margin-left: 5px;">
+                        <span class="otvet">
+                            <button id="o14_1"><img src="vop/a26_151.jpg" width="100%"></button>
+                            <button id="o14_2"><img src="vop/a26_153.jpg" width="100%"></button>
+                            <button id="o14_3"><img src="vop/a26_155.jpg" width="100%"></button>
+                        </span>
+                </div>
+
+                <div id="vop15" style="display: none;">
+                    <img src="vop/q21.jpg" width="30%" style="margin-top: -10px; margin-left: 5px;">
+                        <span class="otvet">
+                            <button id="o15_1"><img src="vop/a21_121.jpg" width="100%"></button>
+                            <button id="o15_2"><img src="vop/a21_124.jpg" width="100%"></button>
+                            <button id="o15_3"><img src="vop/a21_126.jpg" width="100%"></button>
+                        </span>
+                </div>
+
+                <div id="rezult" style="display: none;">
+                    
+                    <h1 style="text-align: center;">Результат</h1>
+                    <h2>Ваш IQ:<div id="iq"><h4></h4></div></h2>
+                    <h2>Сделано заданий:<div id="p_o"><h4></h4></div></h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="block-zadach" style="display: none;">
+            <div id="mode">
+                    <button id="z1">
+                        <h3>Найди пару</h3>
+                        <p>Ваша миссия найти, как можно быстрее и за меньшее количество попыток</p>
+                    </button>
+
+                    <button id="z2">
+                        <h3>2048</h3>
+                        <p>В разработке</p>
+                    </button>
+            </div>
+        </div>
+
+        <div id="stats" style="display: none;">
+            <h1 style="color: white;">В разработке</h1>
+        </div>
+
+
+</body>
+<script src="app.js"></script>
+</html>
