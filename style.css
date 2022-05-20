@@ -19,10 +19,6 @@ body{
 
 }
 
-#osn{
-    border: 0;
-    background-color: rgba(0, 0, 0, 0);
-}
 
 .menu{
     display: flex;
