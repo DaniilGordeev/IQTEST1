@@ -11,6 +11,13 @@ document.getElementById('te2').onclick = function te2(){
     document.getElementById('stats').style.display = 'none';
 }
 
+document.getElementById('osn').onclick = function osn(){
+    document.getElementById('opis1').style.display = 'block';
+    document.getElementById('block-test').style.display = 'none';
+    document.getElementById('block-zadach').style.display = 'none';
+    document.getElementById('stats').style.display = 'none';
+}
+
 document.getElementById('testBth').onclick = function testBth(){
     document.getElementById('vop').style.display = 'block';
     document.getElementById('vop1').style.display = 'block';
