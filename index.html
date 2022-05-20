@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>IQ</title>
+    <script src ="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script> 
 </head>
 <body>
 
@@ -200,7 +201,17 @@
         <div id="stats" style="display: none;">
             <h1 style="color: white;">В разработке</h1>
         </div>
+    
+            <script>
+  // Sends event to client
+  vkBridge.send('VKWebAppInit');
+            
+bridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
 
+    bridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
+    .then(data => console.log(data.result))
+    .catch(error => console.log(error));
+</script>
 
 </body>
 <script src="app.js"></script>
