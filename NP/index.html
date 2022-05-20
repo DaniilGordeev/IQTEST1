@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра «Найди пару» | 6x6</title>
+      <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Tinos&subset=cyrillic');
+        @media screen and (max-width: 425px){
+          [data-view="card"] {
+          transform: rotateY(180deg);
+          width: 57px;
+          height: 57px;
+          margin: 1px;
+          float: left;
+          cursor: pointer;
+          background-color: #ffffff;
+          border-radius: 5px;
+        }
+        div{
+          width: 375px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+  <a class="wrapper">
+  <h1>Игра «Найди пару»</h1>
+     <p>Размер: <a href="index.html">6×6</a> | <a href="eight.html">8×8</a> | <a href="ten.html">10×10</a> |</p>
+
+      <br>
+  <p>Нажмите на любую карту, чтобы начать</p><br>
+
+  <p id ="text"></p>
+  <div id="container" class="">
+
+  </div>
+<div class="bth">
+    <button id="back">Назад</button>
+    <button id="res">Рестарт</button>
+    <button id="button-pause">Пауза</button><br><br>
+          Время: <span id="seconds">00</span>.<span id="tens">00</span><br>Попытки: <span id="triesid"></span>
+          <br><br>
+</div>
+</div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
