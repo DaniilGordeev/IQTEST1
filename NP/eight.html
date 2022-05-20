@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Игра «Найди пару» | 8x8</title>
+      <script src ="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script> 
       <link rel="stylesheet" href="css/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Tinos&subset=cyrillic');
@@ -64,7 +65,18 @@
           <br><br>
 </div>
 </div>
+  
+        <script>
+  // Sends event to client
+  vkBridge.send('VKWebAppInit');
+            
+bridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
 
+    bridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
+    .then(data => console.log(data.result))
+    .catch(error => console.log(error));
+</script>
+  
   <script src="js/eight.js"></script>
 </body>
 </html>
